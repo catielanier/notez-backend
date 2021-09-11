@@ -1,0 +1,24 @@
+{
+  "name": "notez-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Corey Lanier",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "clsx": "^1.1.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "node-mailjet": "^3.3.4",
+    "util": "^0.12.4"
+  }
+}
