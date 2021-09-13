@@ -7,6 +7,7 @@ const http = require("http");
 const router = express();
 
 // Middleware
+require("dotenv").config({ path: __dirname + "/.env" });
 const { URL, PORT } = require("./_utils/constants");
 const middleWare = require("./_middleware");
 const { applyMiddleware } = require("./_utils");
