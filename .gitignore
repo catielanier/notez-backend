@@ -87,4 +87,3 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-constants.js
