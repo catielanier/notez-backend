@@ -8,35 +8,47 @@ const gameSchema = new Schema({
   name: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
   name_ja: {
-    type: String
+    type: String,
   },
   name_ko: {
-    type: String
+    type: String,
   },
   "name_zh-cn": {
-    type: String
+    type: String,
   },
   "name_zh-tw": {
-    type: String
+    type: String,
   },
-  "name_zh-hk": {
-    type: String
+  name_it: {
+    type: String,
+  },
+  name_es: {
+    type: String,
+  },
+  name_pt: {
+    type: String,
+  },
+  name_ru: {
+    type: String,
+  },
+  name_fr: {
+    type: String,
   },
   characters: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: Character
-    }
+      ref: Character,
+    },
   ],
   filters: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: Filter
-    }
-  ]
+      ref: Filter,
+    },
+  ],
 });
 
 exports.model = mongoose.model("Game", gameSchema);
